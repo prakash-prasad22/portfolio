@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import LocomotiveScroll from 'locomotive-scroll';
-import QuickBuy from "../../assets/otherImg/QuickBuy.png"
-import Medicare from "../../assets/otherImg/Medicare.png"
-import Spylt from "../../assets/otherImg/Spylt.png"
-import BookBazar from "../../assets/otherImg/BookBazar.png"
+import QuickBuy from "../../assets/otherImg/QuickBuy.webp"
+import Medicare from "../../assets/otherImg/Medicare.webp"
+import Spylt from "../../assets/otherImg/Spylt.webp"
+import BookBazar from "../../assets/otherImg/BookBazar.webp"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useNavigate } from 'react-router-dom';
