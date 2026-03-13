@@ -22,7 +22,7 @@ function Footer() {
       .send(
         "9707@Prakash",
         "template_qpmn03q",
-        { message: formData.message, contact: formData.contact },
+        { message: formData.message, email: formData.contact, contact: formData.contact },
         "UEItdvpzm2QlM9ACN"
       )
       .then(
