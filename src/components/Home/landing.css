@@ -1,0 +1,60 @@
+/* Grid background lines */
+.grid-container::before,
+.grid-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background-position 0.8s ease-out;
+}
+
+.grid-container::before {
+  background-image: linear-gradient(
+    to right,
+    rgba(126, 130, 151, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 50px 100%;
+  background-position: 0 0;
+}
+
+.grid-container::after {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(126, 130, 151, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 100% 50px;
+  background-position: 0 0;
+}
+
+.grid-container:hover::before {
+  background-position: -50px 0;
+}
+
+.grid-container:hover::after {
+  background-position: 0 -50px;
+}
+
+/* Fading gradient border effect */
+.fading-border::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 1.75rem;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(126, 130, 151, 0) 0deg,
+    rgba(126, 130, 151, 0.4) 30deg,
+    rgba(126, 130, 151, 0.4) 60deg,
+    rgba(126, 130, 151, 0) 90deg,
+    rgba(126, 130, 151, 0) 180deg,
+    rgba(126, 130, 151, 0.4) 210deg,
+    rgba(126, 130, 151, 0.4) 240deg,
+    rgba(126, 130, 151, 0) 270deg,
+    rgba(126, 130, 151, 0) 360deg
+  );
+}
